@@ -1,4 +1,4 @@
-/* Global */
+/* GLOBAL */
 
  * {
     font-family: sans-serif;
@@ -11,4 +11,9 @@ a:hover {
     text-decoration: underline;
 }
 
+/* MAIN */
+
 /* Navbar */
+nav {
+    height: 40px;
+}
