@@ -1,4 +1,6 @@
+/* -------------------------------------------------------------------------- */
 /* GLOBAL */
+/* -------------------------------------------------------------------------- */
 
  * {
     font-family: sans-serif;
@@ -34,13 +36,21 @@ a:hover {
     box-shadow: black;
 }
 .btn-search {
-    border: none;
+    border-radius: 5px;
     border: 1px solid #f8f9fa;
     font-size: 14px;
     color: #3c4043;
+    padding: 10px;
+    margin: 0 5px;
 }
-.btn
+.btn-search:hover {
+    box-shadow: 1 1px 1 1px 20px grey;
+    border: 1px solid rgb(183, 181, 181);
+}
+
+/* ---------------------------------------------------------------------------------------- */
 /* MAIN */
+/* ---------------------------------------------------------------------------------------- */
 
 /* Header */
 
@@ -81,16 +91,20 @@ header a {
     margin-top: 0;
 }
 /* Search */
+
 #search .search-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+    /* searchbar */
+
 #search .search-container .search-bar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 484px;
     max-width: 500px;
     margin: 4px auto;
@@ -102,17 +116,15 @@ header a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto auto;
 }
 
-#search .search-bar-container {
-display: flex;
-
-}
+    /* searchbuttons */
 
 #search .search-container .search-btns {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -130,22 +142,47 @@ footer a {
 }
 footer #location {
     padding-left: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
+
+    /* footernav */
+
 footer #footer-container {
     background-color: white;
 }
 footer #footer-container .footer-items{
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    height: 24px;
 }
 footer #footer-container .footer-items .footer-item {
     padding: 0 10px;
+    margin: auto auto;
 }
+.footer-item-1 {
+    position: absolute;
+    left: 10px;
+}
+.footer-item-2 {
+    position: absolute;
+    left: auto;
+    right: auto;
+}
+.footer-item-3 {
+    position: absolute;
+    right: 10px;
+}
+    /* footerlist */
 .footerlist {
     display: flex;
     list-style: none;
-    padding: 0 4px;
+    padding: 0 10px;
+    margin: auto 4px;
 }
 .footerli {
     padding: 0 4px;
